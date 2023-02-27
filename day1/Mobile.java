@@ -1,23 +1,57 @@
-package week1.day1;
+package week2.day1;
 
-public class Mobile {
-
-	String mobileBrandName ="oppo";
-	char mobileLogo='o';
-	short noOfMobilePiece=999;
-	int modelNumber=232425;
-	long mobileImeiNumber=34567890123L;
-	float mobilePrice=39999.65F;
-	boolean isDamaged=true;
-	public static void main(String[] args) 
+public class Mobile {// class
+	public void switchOn()//method
 	{
-		Mobile mob=new Mobile();
-		System.out.println(mob.mobileBrandName);
-		System.out.println("Mobile logo ="+mob.mobileLogo);
-		System.out.println("No. of mobile piece "+" ="+mob.noOfMobilePiece);
-		System.out.println("Mobile IMEI number "+" ="+mob.mobileImeiNumber);
-		System.out.println("Mobile price "+" ="+mob.mobilePrice);
-		System.out.println("Damaged "+" ="+mob.isDamaged);
-		
+		System.out.println("Switch on Mobile");
+	}
+	public void switchOff()
+	{
+		System.out.println("Switch off Mobile");
+	}
+	public void sendText()
+	{
+		System.out.println("send a text");
+	}
+	public void makeCall()
+	{
+		System.out.println("Make a call");
+	}
+	public void downloadApps()
+	{
+		System.out.println("Download an app");
+	}
+	public void capturePicture()
+	{
+		System.out.println("Capture a picture");
+	}
+	public void takeVideos()
+	{
+		System.out.println("Take Videos");
+	}
+	public void turnOnWifi()
+	{
+		System.out.println("Turn on Wi-Fi");
+	}
+	public void turnOffWifi()
+	{
+		System.out.println("Turn off Wi-Fi");
+	}
+	public void playSongs()
+	{
+		System.out.println("Playing songs");
+	}
+	public static void main(String[] args) {//main method
+		Mobile mob = new Mobile();//mobile() is a constructor
+		mob.switchOn();//calling method by object
+		mob.switchOff();
+		mob.sendText();
+		mob.makeCall();
+		mob.downloadApps();
+		mob.capturePicture();
+		mob.takeVideos();
+		mob.turnOnWifi();
+		mob.turnOffWifi();
+		mob.playSongs();
 	}
 }
