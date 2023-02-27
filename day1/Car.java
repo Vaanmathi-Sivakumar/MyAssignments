@@ -1,24 +1,31 @@
-package week1.day1;
+package week2.day1;
 
-public class Car 
-{
-	int   seatingCapacity=99999;
-	byte   engine=1;
-	String   color="Red";
-	char  carFirstLetter='R';
-	int  regNumber=9999;
-	long chesisNumber=5642736781231235123l;
-	float  fuelCapacity=75.23443f;
-	double range=344345.343434;
-	boolean  carIsPuncture=false;
-   public static void main(String[] args) {
-	   Car myCar=new Car();
-	   
-	   System.out.println(myCar.regNumber);
-	   System.out.println("registration Number ="+myCar.regNumber);
-	   System.out.println("registration Number "+" ="+myCar.regNumber);
-	   
+public class Car {
 	
-}	
-
+	public void applyBreak()
+	{
+		System.out.println("apply Break");
+	}
+	public void applyGear()
+	{
+		System.out.println("apply Gear");
+	}
+	public void switchOnAc()
+	{
+		System.out.println("switch On Ac");
+	}
+	public void applyAcclerate()
+	{
+		System.out.println("apply Acclerator");
+	}
+	
+	public static void main(String[] args) {//main method
+		Car myCar = new Car();//mobile() is a constructor
+		myCar.applyBreak();//calling method by object
+		myCar.applyGear();
+		myCar.applyAcclerate();
+		myCar.switchOnAc();
+		
+	}
+		
 }
